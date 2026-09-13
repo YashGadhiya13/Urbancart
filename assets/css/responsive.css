@@ -1,0 +1,147 @@
+/* ===== Tablet View ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 12px 20px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  nav ul.show {
+    max-height: 400px;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text .tagline {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    height: 380px;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+  }
+
+  .product-grid,
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-detail-section {
+    flex-direction: column;
+  }
+
+  .cart-summary {
+    margin: 0 auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  /* Let wide data tables (cart, admin/member dashboards) scroll
+     horizontally within themselves instead of overflowing the page. */
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-img {
+    height: 300px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+  .product-grid,
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  .cart-product img {
+    width: 45px;
+    height: 45px;
+  }
+
+  footer {
+    padding: 20px 15px;
+  }
+}
